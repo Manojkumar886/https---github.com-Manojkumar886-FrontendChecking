@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Scripts/Functions.js">
+        function hey()
+        {
+            let y=document.getElementsByTagName("p")
+            alert(y[1].innerHTML)
+            alert(y[1].className)
+            alert(y[1].id)
+            y[1].innerHTML="Nothing Nothing"
+        }
+        function yet()
+        {
+            var wind=document.getElementsByName("two")[0]
+            alert(wind.value)
+            alert(wind.id)
+            alert(wind.placeholder)
+            alert(wind.type)
+            alert(wind.name)
+            wind.value="Manojkumar M"
+        }
+    </script>
+</head>
+<body>
+    <h2 ondblclick="alert(raj())">Namakkal Tourist Places</h2>
+    <ol type="circle" class="three" id="round" ondblclick="manoj()">
+        <li id="four">Namakkal Fort</li>
+        <li onmouseenter="yoyo(document.getElementById('four').innerHTML)">Anjaneyar Temple</li>
+        <li>Arthanareeswarar Temple</li>
+        <li>Pallipalayam Dam</li>
+        <li>Kolli Hills</li>
+        <li>Selur Viewpoint</li>
+    </ol>
+    <h2 ondblclick="manoj()">Namakkal Taluk Details</h2>
+    <ul type="disk">
+        <li>Namakkal</li>
+        <li>Trichengode</li>
+        <li>Rasipuram</li>
+        <li>Pallipalayam</li>
+        <li>paramathi</li>
+        <li>Mohanur</li>
+        <li>pilanallur</li>
+        <li>Namakkal East</li>
+    </ul>   
+    <p>something something</p>          
+    <input type="text" id="one" name="two" placeholder="something typing" onchange="yet()"/>
+    <button  onclick="mano(document.getElementById('four').innerHTML,98,document.getElementById('one').value)"> Manojkumar</button>
+    <p  class="hey" id="wht"  ondblclick="hey()">Java Script is Default operation </p>       
+</body>
+</html>

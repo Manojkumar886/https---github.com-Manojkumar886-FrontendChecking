@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Scripts/Func2.js">
+        function hey()
+        {
+            let Rec=document.getElementsByTagName("p")
+            alert(Rec[0].innerHTML)
+            alert(Rec[0].className)
+            alert(Rec[0].id)
+            Rec[0].innerHTML="This is for hand signal Rules"
+        }
+        function yet()
+        {
+            var y=document.getElementsByName("Rules")[0]
+            alert(y.id)
+            alert(y.type)
+            alert(y.value)
+            y.value="Manojkumar M"
+        }
+
+    </script>
+</head>
+<body>
+    <h2 ondblclick="alert(vijay())">Trafic Rules and Regulation</h2>
+    <ol  type="1" style="color: rgb(230, 128, 13);">RULES
+    <li onmouseenter="man()" style="color: chartreuse;">Always wear a seatbelt</li>
+    <li ondblclick="manoj(document.getElementById('God').innerHTML)">usssh</li>
+    <li onmouseenter="manoj(document.getElementById('Regulation').innerHTML)" style="color: chartreuse;" >Avoid distriction</li>
+    <li  style="color: chartreuse;">Service your car and bike regularly</li>
+    <li style="color: chartreuse;">Do not cross the speed limit</li>
+    <li id="God" style="color: chartreuse;">Follow traffic signals</li>
+    <li id="Regulation" style="color: chartreuse;">Maintain a Line displine</li>
+    </ol>
+    <p class="hlo" id="what" ondblclick="hey()">Hand Signals are necessary at certain times. When slowing down, extend your right arm palm down and swing it up and down; when stopping, raise your forearm vertically outside the vehicle; when turning right or changing lane to the right hand side, extend your right arm straight out, palm to the front; when turning left or changing lane to the left hand side, extend your right arm and rotate it in an anti-clockwise direction.</p>
+    <input type="text" id="Traffic" name="Rules" placeholder="Violation of the rule" onchange="yet()" />
+    <button onclick="pavi('Manoj',97152,'Pavi')">Submit</button>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Script is working")
+        let hai=[]
+        let hello=new Array()
+        hai.push(9.8)
+        hai.push("Manojkumar M")
+        hai.push(true)
+
+        hello.push(1)
+        hello.push("Manojkumar")
+        hello.push(9.8)
+        hello.push('a')
+        hello.push(false)
+       // alert(hai.length+" "+hello.length)
+
+        // function yet(data,pos)
+        // {
+        //     alert(pos)
+        // }
+        // hello.map(yet)
+
+        // for(pos=0;pos<hai.length;pos++)
+        // {
+        //     alert(hai[pos])
+        // }
+        hello.map((data)=>
+        {
+            alert(data)
+            document.write(data)
+
+        })
+        var user=prompt("tell as a position to delete:","")
+         hello.filter((v,i)=>
+         {
+             return v!==hello[user]
+         })
+
+         alert("After deletion")
+         hello.map((data)=>
+         {
+             alert(data)
+         })
+
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
